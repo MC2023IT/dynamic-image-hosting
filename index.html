@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML with Image</title>
+    <title>Auto-Refreshing HTML with Image</title>
+
+    <!-- Add the following script for automatic page refresh -->
+    <script>
+        // Function to refresh the page every 5 seconds (5000 milliseconds)
+        function autoRefresh() {
+            setTimeout(function () {
+                location.reload();
+            }, 1000); // Adjust the time interval as needed (in milliseconds)
+        }
+
+        // Call the autoRefresh function when the page is loaded
+        window.onload = autoRefresh;
+    </script>
 </head>
 <body>
 
     <h1>Hello, this is a simple HTML file with an image!</h1>
 
     <!-- Replace 'path/to/your/image.jpg' with the actual path or URL of your image -->
-    <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaDVlBYP-lh-s8crYu4UnDn0jCI3IXZOJOlG6YLh2zCptzjQRcNm0hrPj4tr-vG3fkICGCcFAXGSBU8npmPsB6jXpGr2nQ=s1600"  width="400" height="500" alt="Description of the image">
+    <img src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaDVlBYP-lh-s8crYu4UnDn0jCI3IXZOJOlG6YLh2zCptzjQRcNm0hrPj4tr-vG3fkICGCcFAXGSBU8npmPsB6jXpGr2nQ=s1600" alt="Description of the image">
 
 </body>
 </html>
-
